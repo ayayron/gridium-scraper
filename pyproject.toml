@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gridium"
+version = "0.1.0"
+description = "Gridium tide forecast scraper"
+authors = ["Aaron Hoffer <ayayron42@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+scraper = 'gridium.scraper'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
